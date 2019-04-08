@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script type="text/javascript" src="validation.js"></script>
+    </head>
+    <body>
+        <form  name="myform" >
+            <div class=" form-group row ">
+                <label class=" col-md-2" for="ten">Họ tên:</label>
+                <input type="text" name="ten" class="form-control col-md-3 col-offset-md-3" id="ten" placeholder="nhập tên"/>
+            </div>
+            <div class="form-group row">
+                <label class=" col-md-2" for="email">Email:</label>
+                <input type="text" name="email" class="form-control col-md-3 col-offset-md-3" id="email" placeholder="nhập email"/>
+            </div>
+            <div class="form-group row">
+                <label class=" col-md-2" for="sdt">Số điện thoại:</label>
+                <input type="text" name="sdt" class="form-control col-md-3 col-offset-md-3" id="sdt" placeholder="nhập số điện thoại"/>
+            </div>
+            <div class="form-group row">
+                <label class=" col-md-2" for="quoctich">Quốc tịch:</label>
+                <select class="form-control col-md-3 col-offset-md-3" name="quoctich" id="quoctich">
+                    <option value="-1">[Chọn quốc tịch]</option>
+                    <option value="1">Việt Nam</option>
+                    <option value="2">Campuchia</option>
+                    <option value="3">Thái Lan</option>
+                </section>
+            </div>
+            <div class="form-group ">
+                <input type="button" value="Submit" id="submit" onsubmit="return validation();"/>
+            </div>
+        </form>
+    </body>
+</html>
